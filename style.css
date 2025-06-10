@@ -1,0 +1,138 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #F9E7E7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ADA0A6;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #A5243D; /* A fun pink color */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #581908;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px;
+}
+
+#ideaInput {
+    flex-grow: 1; /* Takes up available space */
+    padding: 10px;
+    border: 1px solid #011627;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #A5243D;
+    color: #F9E7E7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #581908;
+}
+
+#ideasUList {
+    font-family:"Georgia";
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+    margin-bottom: 20px;
+    min-height: 50px; /* So it doesn't collapse when empty */
+    border: 1px dashed #011627;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#ideasUList li {
+    background-color: #F9E7E7;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid #011627;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ideasUList li .delete-btn {
+    background-color: #A5243D;
+    color: #F9E7E7;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 6px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#ideasUList li .delete-btn:hover {
+    background-color: #581908;
+}
+
+
+#pickIdeaButton {
+    display: block; /* Make it a block to center it with margin */
+    width: 60%;
+    margin: 20px auto; /* Center button */
+    padding: 12px;
+    font-weight: bold;
+    background-color: #F9E7E7; /* Green for picking */
+    color: #A5243D;
+}
+
+#pickIdeaButton:hover {
+    background-color: #581908;
+}
+
+#resultArea {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #A5243D; /* Light blue background for result */
+    border: 1px solid #581908;
+    border-radius: 4px;
+}
+
+#chosenIdea {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ADA0A6; /* Darker blue for the chosen idea text */
+    margin-top: 5px;
+    padding: 10px;
+    min-height: 30px; /* So it doesn't jump around when text changes */
+}
+
+/* Highlight class for selected item */
+.selected-idea {
+    background-color: #A5243D !important; /* Light yellow, important to override other li styles */
+    font-weight: bold;
+    border-color: #581908 !important;
+}
